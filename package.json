@@ -1,0 +1,17 @@
+{
+  "name": "titanic",
+  "version": "0.0.1",
+  "preferGlobal": "true",
+  "author": "stoke <stoke@autistici.org>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stoke/titanic.js.git" 
+  },
+  "dependencies": {
+    "director": "*"
+  },
+  "main": "./lib/titanic.js",
+  "bin": {
+    "titanic": "./bin/titanic"
+  }
+}
