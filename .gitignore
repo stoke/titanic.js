@@ -1,2 +1,4 @@
 http/
 lib/node_modules
+node_modules
+*.bat

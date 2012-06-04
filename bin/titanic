@@ -11,7 +11,7 @@ if (!process.argv[1]) {
 
 var eol = 'win32' === os.platform() ? '\r\n' : '\n'
 
-var clientjs = [  
+var clientjs = [
   'var tagValue = {',
   '  input: \'value\',',
   '  textarea: \'innerHTML\',',
@@ -131,6 +131,16 @@ var clientjs = [
   '      });',
   '    });',
   '  });',
+  '  ',
+  '  window.socket.on(\'css\', function(css) {',
+  '    var head = document.getElementsByTagName("head")[0],',
+  '      link = document.createElement(\'link\');',
+  '      ',
+  '    link.rel = "stylesheet";',
+  '    link.href = css;',
+  '    ',
+  '    head.appendChild(link);',
+  '  });   ',
   '  ',
   '  window.socket.on(\'get_value\', getValue);',
   '  window.socket.on(\'set_value\', setValue);',
