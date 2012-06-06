@@ -8,7 +8,8 @@
     "url": "https://github.com/stoke/titanic.js.git" 
   },
   "dependencies": {
-    "director": "*"
+    "director": "*",
+    "socket.io": "*"
   },
   "main": "./lib/titanic.js",
   "bin": {
